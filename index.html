@@ -51,10 +51,9 @@ ng="pt-br">
                 <option v-for="quilometragem in quilometragem" v-bind:value="quilometragem.id">{{ quilometragem.name }}></option>
                 </select>
 <br>  
-                            <input type="submit" value="Calcular" 
-                            v-bind:disabled="(modelo != '' marca != '' ano !='' combustível !='' quilometragem!='')">
+                            
                             <submit ></submit></input>
-                            <!--<div><input type="submit" v-bind:disabled="!isValid">Submit</input></div>-->
+                            <div><input type="submit" v-bind:disabled="!isValid">Submit></div>
 
 
 

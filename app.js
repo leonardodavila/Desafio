@@ -43,7 +43,7 @@ new Vue ({
              .get("veiculos/" + id_quilometragem + ".json")
              .then(resposta => (this.quilometragem = resposta.data))
     },
-
+    },
 computed: {
     isValid: function () {
       return this.marca !== '' && this.modelo !== '' && this.ano !== ''
