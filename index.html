@@ -42,7 +42,7 @@ ng="pt-br">
                 </selec>
 <br>
                 <label for="combustível">Tipo de Combustível:</label>
-                <select name="tipo de combustível" id="conbustível" required nome="combustível">
+                <select name="tipo de combustível" id="combustível" required nome="combustível">
                 <option v-for="combustível in combustível" v-bind:value="combustível.id">{{ combustível.name }}></option>
                 </select>
 <br>
@@ -52,13 +52,14 @@ ng="pt-br">
                 </select>
 <br>  
                             
-                            <submit ></submit></input>
-                            <div><input type="submit" v-bind:disabled="!isValid">Submit></div>
+<!--<submit ></submit></input>-->
+                            <div><input type="submit" v-bind:disabled="!isValid">Calcular</div>
 
 
 
                             <p>"O valor de seu carro  será dado de acordo com suas especificações"
                              <br>
+                            <div id="resultadosfilttrados">
                              Marca
                              <br>
                              Modelo
@@ -70,7 +71,7 @@ ng="pt-br">
                             Quilometragem Aproximado
                             <br>
                             Seu Carro Vale </p>
-                            <div id="resultadosfilttrados"></div>
+                            <!--<div id="resultadosfilttrados">--></div>
 
                            <input type="button" value="Limpar" v-on:click="resultadosfiltrados">
 

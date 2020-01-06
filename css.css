@@ -64,9 +64,9 @@ background: rgb(129, 165, 182);
 .formulario {
 background-attachment: fixed;
 background: rgb(227, 237, 241);
-width: 70%;
+width: 50%;
 margin: 20px auto;
-padding: 20px;
+padding: 15px;
 border-radius: 5px;
 }
 .formulario select[name="marca"],
@@ -75,21 +75,21 @@ border-radius: 5px;
 .formulario select[name="tipo de combustível"],
 .formulario select[name="quilometragem aproximado"],
 .formulario textarea {
-    width: 80%;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    width: 50%;
+    padding: 3px;
+    margin-bottom: 4px;
+    border-radius: 4px;
 }
 .formulario input[type="submit"] {
-    width: 40%;
+    width: 25%;
     margin: 0 auto;
     background: none;
     border: 1px solid black;
     color: black;
-    padding: 10px;
+    padding: 3px;
     cursor: pointer;
-    font-size: 100%;
-    border-radius: 5px;
+    font-size: 90%;
+    border-radius: 4px;
 }
 .formulario input[type="submit"]:hover {
     color: rgb(228, 229, 236);
@@ -104,7 +104,7 @@ footer {
 }
 @media screen and (max-width: 500px) {
     .formulario  {
-        width: 100%;
+        width: 90%;
     }
     /*.main {
         width: 100%;

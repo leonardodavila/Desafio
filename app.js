@@ -30,8 +30,7 @@ new Vue ({
             .get("veiculos/" + id_ano + ".json")
             .then(resposta => (this.ano = resposta.data))
     },
-        
-
+    
     function(id_combustível) {
              this.fipeapi
              .get("veiculos/" + id_combustível + ".json")
@@ -47,7 +46,7 @@ new Vue ({
 computed: {
     isValid: function () {
       return this.marca !== '' && this.modelo !== '' && this.ano !== ''
-       && this.combustível!== '' && this.quilometragem !== ''
+       && this.combustível !== '' && this.quilometragem !== ''
     },
     
     },
