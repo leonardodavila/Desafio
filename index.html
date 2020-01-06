@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html la
+ng="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0,
+     minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Desafio</title>
+    <link rel="shorcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css.css">
+
+</head>
+<body>      
+    <div id="app">
+        <div class="contenedor">
+            <header>
+                <nav>
+                    <ul>
+                        <li><a href="#">Contato</a></li>
+                        <li><a href="#">E-mail</a></li>
+                    </ul>
+                </nav>
+             </header>
+                        <form action="" name="formulario" id="formulario">
+                             <section class="main">
+                                <h1>Quanto Vale Meu Carro?</h1>
+              <div class="formulario" action="">
+               <label for="marca">Marca:</label>
+                <select name="marca do carro" id="marca" requered nome="marca">
+                <option v-for="marca in marca"  v-bind:value="marca.id">{{ marca.name }}></option>
+                </select>
+<br>      
+                <label for="modelo">Modelo:<label>
+                <select name="modelo" id="modelo" required nome="modelo">
+                    <option v-for="modelo in modelo" v-bind:value="modelo.id">{{ modelo.name }}></option> 
+                </select>
+<br>        
+                <label for="ano">Ano:</label>
+                <select name="ano" id="ano" required nome="ano">
+                    <option v-for="ano in ano" v-bind:value="ano.id">{{ ano.name }}></option>
+                </selec>
+<br>
+                <label for="combustível">Tipo de Combustível:</label>
+                <select name="tipo de combustível" id="conbustível" required nome="combustível">
+                <option v-for="combustível in combustível" v-bind:value="combustível.id">{{ combustível.name }}></option>
+                </select>
+<br>
+                <label for="quilometragem">Quilometragem Aproximado:</label>
+                <select name="quilometragem aproximado" id="quilometragem" required nome="Quilometragem">
+                <option v-for="quilometragem in quilometragem" v-bind:value="quilometragem.id">{{ quilometragem.name }}></option>
+                </select>
+<br>  
+                            <input type="submit" value="Calcular" 
+                            v-bind:disabled="(modelo != '' marca != '' ano !='' combustível !='' quilometragem!='')">
+                            <submit ></submit></input>
+                            <!--<div><input type="submit" v-bind:disabled="!isValid">Submit</input></div>-->
+
+
+
+                            <p>"O valor de seu carro  será dado de acordo com suas especificações"
+                             <br>
+                             Marca
+                             <br>
+                             Modelo
+                             <br>
+                             Ano
+                             <br>
+                            Tipo de Combustível
+                            <br>
+                            Quilometragem Aproximado
+                            <br>
+                            Seu Carro Vale </p>
+                            <div id="resultadosfilttrados"></div>
+
+                           <input type="button" value="Limpar" v-on:click="resultadosfiltrados">
+
+                 </section>
+                </div>
+        </div>
+    </div>
+     </form>
+    </section>                  
+                                   <footer>
+                                         <p>"Maria Gabriela Moreno 2020 - Dereitos Reservados"</p>
+                                    </footer>
+                </div>   
+                <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+                <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+                <script src="app.js"></script>
+                 
+</body>
+</html>

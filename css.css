@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;*/
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: url("./img/tapiz.png");
+    font-size: 80%;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+   /* overflow: hidden;*/
+    margin: 20px auto;
+}
+header { 
+    background: white;
+}
+header nav {
+    background: url('img/volanty.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 30%;
+    width: 90%;
+}
+header nav ul {
+    width: 95%;
+    overflow: hidden;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+h1 {
+    font-family: sans-serif;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    /*background-attachment: fixed;*/
+}
+header nav ul li {
+    text-align: right;
+}
+header nav ul li a {
+    color: rgb(31, 43, 211);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+    text-align: right;   
+}
+header nav ul li a:hover {
+background: rgb(129, 165, 182);
+}
+.main {
+    width: 100%;
+    background: url("./img/carros.jpg");     
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+.formulario {
+background-attachment: fixed;
+background: rgb(227, 237, 241);
+width: 70%;
+margin: 20px auto;
+padding: 20px;
+border-radius: 5px;
+}
+.formulario select[name="marca"],
+.formulario select[name="modelo"],
+.formulario select[name="ano"],
+.formulario select[name="tipo de combustível"],
+.formulario select[name="quilometragem aproximado"],
+.formulario textarea {
+    width: 80%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.formulario input[type="submit"] {
+    width: 40%;
+    margin: 0 auto;
+    background: none;
+    border: 1px solid black;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 100%;
+    border-radius: 5px;
+}
+.formulario input[type="submit"]:hover {
+    color: rgb(228, 229, 236);
+    background: rgb(129, 165, 182);
+}
+footer {
+    width: 100%;
+    clear: both;
+    color:rgb(36, 44, 150) ;
+    padding: 20px 0;
+    text-align: center;
+}
+@media screen and (max-width:800px) {
+    .main {
+        width: 100%;
+     }
+    footer {
+        width: 100%;
+     }
+    body {
+        background: rgb(108, 176, 197);
+     }
+}
