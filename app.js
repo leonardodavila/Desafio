@@ -43,7 +43,7 @@ new Vue ({
              .then(resposta => (this.quilometragem = resposta.data))
     },
     },
-computed: {
+    computed: {
     isValid: function () {
       return this.marca !== '' && this.modelo !== '' && this.ano !== ''
        && this.combustível !== '' && this.quilometragem !== ''
@@ -51,7 +51,7 @@ computed: {
     
     },
 
-mounted: function() {
+    mounted: function() {
     this.fipeapi
     .get("carros/marcas.json")
     .then(resposta => (this.marca = resposta.data))
