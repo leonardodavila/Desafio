@@ -9,23 +9,23 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: url("./img/tapiz.png");
-    font-size: 80%;
+    font-size: 90%;
 }
 .contenedor {
     width: 90%;
     max-width: 1000px;
-   /* overflow: hidden;*/
     margin: 4px auto;
 }
 header { 
     background: white;
 }
 header nav {
-    background: url('img/volanty.png');
+    background: url('img/volanty2.png');
     background-repeat: no-repeat;
     background-position: left;
     background-size: 30%;
-    width: 90%;
+    width: 100%;
+    background-color:rgb(54, 60, 141);
 }
 header nav ul {
     width: 90%;
@@ -35,24 +35,28 @@ header nav ul {
     justify-content: flex-end;
 }
 h1 {
-    font-family: sans-serif;
+    font-family: helvetica;
     color: white;
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
 }
 header nav ul li {
     text-align: right;
+    float: left;
 }
 header nav ul li a {
-    color: rgb(31, 43, 211);
+    color:white;
     text-decoration: none;
     display: inline-block;
     padding: 10px 15px;
-    text-align: right;   
+    text-align: right;
+    width: 10% auto;
+    height: 40px;
+    font-size: 25px;
 }
 header nav ul li a:hover {
-background: rgb(129, 165, 182);
+    background:rgb(138, 141, 170) ;
 }
 .main {
     width: 100%;
@@ -63,73 +67,65 @@ background: rgb(129, 165, 182);
 }
 .formulario {
 background-attachment: fixed;
-background: rgb(227, 237, 241);
+background:rgb(220, 223, 228);
 width: 70%;
 margin: 10px auto;
 padding: 4px;
-border-radius: 4px;
+border-radius: 8px;
 }
-
-.formulario select[name="marca"],
-.formulario select[name="modelo"],
-.formulario select[name="ano"],
-.formulario select[name="tipo de combustível"],
-.formulario select[name="quilometragem aproximado"],
+.formulario select[name= "marca"],
+.formulario select[name= "modelo"],
+.formulario select[name= "ano"],
+.formulario select[name= "tipo de combustível"],  
+.formulario select[name= "quilometragem aproximado"],
 .formulario textarea {
     width: 80%;
-    padding: 8px;
-    margin-right: 20px;
-    margin-left: 20px;
-    margin-bottom: 2px;
+    padding: 2px;
+    margin-right: 20%;
+    margin-left: 10%;
+    margin-bottom: 2px;   
     border-radius: 2px;
 }
 .formulario input[type="submit"] {
-    width: 20%;
+    width: 22%;
     margin: 0 auto;
-    background: none;
-    border: 1px solid black;
-    color: black;
+    border: 2px  double solid black;
+    color: white;
     padding: 3px;
     cursor: pointer;
-    font-size: 90%;
-    border-radius: 4px;
+    font-size: 100%;
+    border-radius: 15px;
+    background: rgb(54, 60, 141);
 }
 .formulario input[type="submit"]:hover {
-    color: rgb(228, 229, 236);
-    background: rgb(129, 165, 182);
+    background:rgb(138, 141, 170);
 }
-input [type="button"] {
-    width: 30%;
+.formulario input[type="button"] {
+    width: 20%;
     margin: 0 auto;
-    background: none;
-    border: 1px solid black;
-    color: black;
+    border: 2px double solid black;
+    color: white;
     padding: 3px;
     cursor: pointer;
-    font-size: 90%;
-    border-radius: 3px;
-
+    font-size: 100%;
+    border-radius: 20px;
+    background:rgb(54, 60, 141);
 }
-
 input[type="button"]:hover {
-    color: rgb(228, 229, 236);
-    background: rgb(129, 165, 182);
+    background:rgb(138, 141, 170);
 }
 p {
-    font-family: sans-serif;
-    font-style: italic;
+    font-family: helvetica;
     text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
-
 footer {
     width: 100%;
     clear: both;
-    color:rgb(36, 44, 150) ;
+    color:rgb(54, 60, 141);
     padding: 1px 0;
     text-align: center;
 }
-
 @media screen and (max-width: 500px) {
     .formulario  {
         width: 90%;

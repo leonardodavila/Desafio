@@ -8,20 +8,24 @@
     <title>Desafio</title>
     <link rel="shorcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css.css">
-
+    <script src="https://kit.fontawesome.com/6d8f611803.js" crossorigin="anonymous"></script>
+   
 </head>
 <body>      
     <div id="app">
         <div class="contenedor">
             <header>
-                <nav>
-                    <ul>
-                        <li><a href="#">Contato</a></li>
+               <nav>
+                  <ul>
+                       <li><a href="http://www.facebook.com/volantybr/"><i class="fab fa-facebook-f"></i>
+                        <li><a href="https://es.linkedin.com/company/volanty"><i class="fab fa-linkedin-in"></i>
+                       <li><a href="http://instagram.com/volanty_br?igshid=nomc0adf14n2"><i class="fab fa-instagram"></i></a></li>
+                   </ul>
 
-                        <li><a href="#">E-mail</a></li>
-                    </ul>
                 </nav>
+
              </header>
+            
                         <form action="" name="formulario" id="formulario">
                              <section class="main">
                                 <h1>Quanto Vale Seu Carro?</h1>
@@ -50,29 +54,23 @@
                 <select name="quilometragem aproximado" id="quilometragem" required nome="Quilometragem">
                 <option v-for="quilometragem in quilometragem" v-bind:value="quilometragem.id">{{ quilometragem.name }}></option>
                 </select>
-<br>  
-                            
-<!--<submit ></submit></input>-->
                             <div><input type="submit" v-bind:disabled="!isValid" value="Calcular"></div>
-
-
-
                             <p>"De acordo com suas especificações"
-                             <br>
+                            <br>
                              Marca
                              <br>
                              Modelo
                              <br>
                              Ano
                              <br>
-                            Tipo de Combustível
-                            <br>
-                            Quilometragem Aproximado
-                            <br>
-                            "Seu Carro Vale" </p>
+                             Tipo de Combustível
+                             <br>
+                             Quilometragem Aproximado
+                             <br>
+                             "Seu Carro Vale" </p>
                             <div id="resultadosfilttrados"></div>
 
-                           <input type="button" value="Limpar" v-on:click="resultadosfiltrados">
+                           <div><input type="button" value="Limpar" v-on:click="resultadosfiltrados"><div>
 
                  </section>
                 </div>
@@ -82,7 +80,15 @@
     </section>                  
                                    <footer>
                                          <p>"Maria Gabriela Moreno 2020 - Direitos Reservados"</p>
-                                    </footer>
+                                   </footer>
+                                   
+       
+     
+                </div>
+      </section>
+
+      
+</footer>
                 </div> 
 </body>  
                 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
